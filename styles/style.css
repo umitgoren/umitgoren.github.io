@@ -1,0 +1,147 @@
+/*
+Theme Name: Avada-Child
+Template: Avada
+*/
+
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+
+body, h1, h2, h3, h4, h5, h6, p, span, a, input{
+    font-family:'Noto Sans KR', sans-serif !important;
+}
+#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
+    font: 400 20px/1 dashicons !important;
+}
+#wrapper .fusion-layout-column .fusion-column-wrapper{
+	background-blend-mode: normal;
+}
+#wrapper #main_wrap{
+    background-blend-mode: normal;
+    min-height: 700px;
+}
+#wrapper #main{
+	padding-top: 0;
+}
+#wrapper .fusion-main-menu > ul > li > a{
+	font-size: 18px;
+    letter-spacing: 1px;
+}
+#wrapper .fusion-main-menu > ul > li {
+    padding-right: 130px;
+}
+#wrapper .fusion-main-menu>ul>li:last-child {
+    padding-right: 0;
+}
+#wrapper .fusion-page-title-bar .fusion-page-title-row h1 {
+    font-size: 72px;
+}
+#wrapper .fusion-breadcrumbs span {
+    font-size: 16px;
+}
+#wrapper .fusion-page-title-bar {
+    height: 400px;
+}
+.gb_txt p{
+    color: #333;
+    font-size: 20px;
+}
+#wrapper .kboard-default-poweredby{
+	display: none;
+}
+body.has-sidebar #main .sidebar{
+	margin-top: 50px;
+}
+.page-id-52 #wrapper .fusion-page-title-bar .fusion-page-title-row h1,.page-id-54 #wrapper .fusion-page-title-bar .fusion-page-title-row h1,.page-id-70 #wrapper .fusion-page-title-bar .fusion-page-title-row h1 {
+    font-size: 52px;
+    letter-spacing: -1px;
+}
+.status{
+	background: #f9f9f9;
+    padding: 0px 5px;
+    border: 1px solid #dedede;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    color: #999;
+    font-weight: 300;
+}
+.status.ing{
+	background: #00a8e7;
+    color: #fff;
+    border-color: #00a8e7;
+}
+.footer_logo,.footer_content{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: 300;
+}
+.footer_logo{
+	margin-right: 40px;
+}
+#wrapper .flexslider .slides img{
+	width: auto;
+    margin: 0 auto;
+}
+#wpcf7-f93-p89-o1{
+    max-width: 400px;
+    margin: 0 auto;
+}
+#wpcf7-f93-p89-o1 input[type=text],#wpcf7-f93-p89-o1 input[type=email]{
+	height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    margin: 5px 0;
+}
+#wpcf7-f93-p89-o1 textarea{
+	margin: 5px 0;
+	border-radius: 10px;
+}
+#wpcf7-f93-p89-o1 .wpcf7-submit{
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+#jobs .fusion-layout-column{
+    margin-bottom: 50px !important;
+}
+.games p strong{
+    color: #333;
+    font-size: 30px;
+    margin: 0;
+    display: block;
+}
+.games p{
+	font-size: 18px;
+    color: #333;
+    font-weight: 300;
+}
+.gb_btn{
+	margin-left: 5px;
+}
+.store-icon,career-btn{
+    padding: 5px;
+}
+.underline{
+	text-decoration:underline;
+}
+.games-panel-right,
+.career-panel-right{
+	text-align:center;
+}
+.game-icon{
+	width:192px;
+	height:192px;
+}
+.fusion-post-title{
+    display:none;
+}
+.post-content h1{
+    color:#747474 !important;
+    font-size:28px !important;
+}
+.post-content p{
+    margin-bottom: 10px !important;
+}
+.menu-text{
+    font-weight:bold;
+}
