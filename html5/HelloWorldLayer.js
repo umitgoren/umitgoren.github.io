@@ -22,12 +22,7 @@ var HelloWorldLayer = cc.Layer.extend({
             });
             this.addChild(b, 0);
                 
-            b = new ShaderTest;
-            b.attr({
-                x: 0.5 * a.width,
-                y: 0.1 * a.height
-            });
-            this.addChild(b, 0);
+           
                 
             return !0
         }
