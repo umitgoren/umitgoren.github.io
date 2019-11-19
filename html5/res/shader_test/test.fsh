@@ -7,7 +7,7 @@ uniform float u_radius;
 
 void main()
 {
-    float radius = u_radius;
+    /*float radius = u_radius;
     vec4 accum = vec4(0.0);
     vec4 normal = vec4(0.0);
     
@@ -30,5 +30,9 @@ void main()
     
     normal = ( accum * (1.0 - normal.a)) + (normal * normal.a);
     
-    gl_FragColor = v_fragmentColor * normal;
+    gl_FragColor = v_fragmentColor * normal;*/
+    
+    vec4 texture_color = texture2D(CC_Texture0, v_texCoord);
+    vec4 tint = vec4(1.0, 0.0, 1.0, 1.0);
+    gl_FragColor = texture_color * tint;
 }
