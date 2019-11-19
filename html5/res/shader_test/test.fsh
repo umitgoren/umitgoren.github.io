@@ -34,5 +34,5 @@ void main()
     
     vec4 texture_color = texture2D(CC_Texture0, v_texCoord);
     vec4 tint = vec4(0.0, 1.0, 0.0, 1.0);
-    gl_FragColor =  v_fragmentColor * tint;
+    gl_FragColor =  vec4(0.5, 0.5, 0.5, 1.0);//v_fragmentColor * tint;
 }
