@@ -3,7 +3,7 @@ var HelloWorldLayer = cc.Layer.extend({
         ctor: function() {
             this._super();
             var a = cc.winSize,
-                b = new Knight;
+                /*b = new Knight;
             b.attr({
                 x: 0.1 * a.width,
                 y: 2 * a.height / 3
@@ -20,9 +20,14 @@ var HelloWorldLayer = cc.Layer.extend({
                 x: 0.9 * a.width,
                 y: 2 * a.height / 3
             });
-            this.addChild(b, 0);
+            this.addChild(b, 0);*/
                 
-           
+           b = new ShaderTest();
+                
+           b.attr({
+                x: 0.5 * a.width,
+                y: 0.5 * a.height
+            });     
                 
             return !0
         }
