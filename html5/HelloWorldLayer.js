@@ -27,7 +27,8 @@ var HelloWorldLayer = cc.Layer.extend({
            b.attr({
                 x: 0.5 * a.width,
                 y: 0.5 * a.height
-            });     
+           });
+           this.addChild(b, 0);
                 
             return !0
         }
