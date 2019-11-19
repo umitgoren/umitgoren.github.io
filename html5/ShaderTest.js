@@ -26,7 +26,7 @@ var ShaderTest = cc.Node.extend({
             this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('u_threshold'), 1.75);
             this.shader.setUniformLocationWith3f(this.shader.getUniformLocationForName('u_outlineColor'), 0 / 255, 0 / 255, 255 / 255);
 
-            this.sprite = new cc.Sprite('res/outline/knight.png');
+            this.sprite = new cc.Sprite('res/HelloWorld.png');
             //this.sprite = new Knight;
 
 
