@@ -337,6 +337,8 @@
                 <file name="src/SpriteStripes.js"/>
 
                 <file name="src/SpriteShine.js"/>
+                
+                <file name="src/ShaderTest.js"/>
    
                 <file name="main.js"/>
 
