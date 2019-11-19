@@ -15,7 +15,7 @@ var ShaderTest = cc.Node.extend({
         if( 'opengl' in cc.sys.capabilities ) {
 
 
-            this.shader = new cc.GLProgram("res/outline/outline.vsh", "res/outline/outline.fsh");
+            this.shader = new cc.GLProgram("res/test_shader/test.vsh", "res/test_shader/test.fsh");
             this.shader.addAttribute(cc.ATTRIBUTE_NAME_POSITION, cc.VERTEX_ATTRIB_POSITION);
             this.shader.addAttribute(cc.ATTRIBUTE_NAME_TEX_COORD, cc.VERTEX_ATTRIB_TEX_COORDS);
             this.shader.addAttribute(cc.ATTRIBUTE_NAME_COLOR, cc.VERTEX_ATTRIB_COLOR);
