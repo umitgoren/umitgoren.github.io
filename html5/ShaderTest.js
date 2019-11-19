@@ -2,7 +2,7 @@
  * Created by aillieo on 16/10/22.
  */
 
-var SpriteOutline = cc.Node.extend({
+var ShaderTest = cc.Node.extend({
     sprite:null,
     shader:null,
     dt:0,
