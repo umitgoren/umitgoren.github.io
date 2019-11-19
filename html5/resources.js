@@ -9,7 +9,9 @@ var res = {
         stripes_vsh: "res/stripes/stripes.vsh",
         stripes_fsh: "res/stripes/stripes.fsh",
         shine_vsh: "res/shine/shine.vsh",
-        shine_fsh: "res/shine/shine.fsh"
+        shine_fsh: "res/shine/shine.fsh",
+        test_vsh: "res/shader_test/test.vsh",
+        test_fsh: "res/shader_test/test.fsh",
     },
     g_resources = [],
     i;
