@@ -22,7 +22,7 @@ var HelloWorldLayer = cc.Layer.extend({
             });
             this.addChild(b, 0);*/
                 
-            t = new ShaderTest;  
+            t = new SpriteOutline;  
             t.attr({
                 x: 0.5 * a.width,
                 y: 0.5 * a.height
