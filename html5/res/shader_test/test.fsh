@@ -32,7 +32,7 @@ void main()
     
     gl_FragColor = v_fragmentColor * normal;*/
     
-    vec4 color = texture2D(v_fragmentColor * v_texCoord);
+    vec4 color = texture2D(v_fragmentColor, v_texCoord);
     vec4 tint = vec4(0.3, 0,8, 0.2, 1);
     gl_FragColor = vec4(color * tint);
     
