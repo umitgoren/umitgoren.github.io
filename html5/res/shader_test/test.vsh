@@ -11,5 +11,5 @@ void main()
     gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
  
     // Passing The Texture Coordinate Of Texture Unit 0 To The Fragment Shader
-    v_texCoord = vec2(gl_MultiTexCoord0);
+    v_texCoord = a_texCoord;
 }
