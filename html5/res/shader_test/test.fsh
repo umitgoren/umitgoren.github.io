@@ -1,5 +1,4 @@
 varying vec2 v_texCoord;
-varying vec4 v_fragmentColor;
 
 uniform vec3 u_outlineColor;
 uniform float u_threshold;
