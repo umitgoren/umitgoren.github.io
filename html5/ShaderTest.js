@@ -10,7 +10,8 @@ var ShaderTest = cc.Node.extend({
 
         this._super();
 
-
+        this.sprite = new cc.Sprite('res/HelloWorld.png');
+        //this.sprite = new Knight;
 
         if( 'opengl' in cc.sys.capabilities ) {
 
@@ -23,11 +24,11 @@ var ShaderTest = cc.Node.extend({
             this.shader.link();
             this.shader.updateUniforms();
             this.shader.use();
+            this.shader.setUniformTexture("texture", this.sprite.getTexture());
             this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('u_threshold'), 1.75);
             this.shader.setUniformLocationWith3f(this.shader.getUniformLocationForName('u_outlineColor'), 0 / 255, 0 / 255, 255 / 255);
 
-            this.sprite = new cc.Sprite('res/HelloWorld.png');
-            //this.sprite = new Knight;
+            
 
 
             if(cc.sys.isNative){
