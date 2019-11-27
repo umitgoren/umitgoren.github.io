@@ -29,11 +29,7 @@ var ShaderTest = cc.Node.extend({
             
             
             this.sprite = new cc.Sprite('res/HelloWorld.png');
-         //this.shader.setUniformVec2("u_resolution", this.sprite.getContentSize());
-            
-            
-            this.shader.setUniformLocationWith2f(this.shader.getUniformLocationForName('u_resolution'), this.sprite.getContentSize().width, this.sprite.getContentSize().height);
-
+        
             if(cc.sys.isNative){
                 var glProgram_state = cc.GLProgramState.getOrCreateWithGLProgram(this.shader);
                 glProgram_state.setUniformFloat("u_threshold", 1.75);
