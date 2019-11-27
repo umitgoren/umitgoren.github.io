@@ -25,11 +25,11 @@ var ShaderTest = cc.Node.extend({
             this.shader.use();
             this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('u_threshold'), 1.75);
             this.shader.setUniformLocationWith3f(this.shader.getUniformLocationForName('u_outlineColor'), 0 / 255, 0 / 255, 255 / 255);
-            this.shader.setUniformVec2("u_resolution", this.sprite.getContentSize());
+           
             
             
             this.sprite = new cc.Sprite('res/HelloWorld.png');
-        
+         this.shader.setUniformVec2("u_resolution", this.sprite.getContentSize());
 
             if(cc.sys.isNative){
                 var glProgram_state = cc.GLProgramState.getOrCreateWithGLProgram(this.shader);
