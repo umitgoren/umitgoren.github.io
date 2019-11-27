@@ -32,7 +32,7 @@ var ShaderTest = cc.Node.extend({
          //this.shader.setUniformVec2("u_resolution", this.sprite.getContentSize());
             
             
-            this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('u_resolution'), this.sprite.getContentSize().width, this.sprite.getContentSize().height);
+            this.shader.setUniformLocationWith2f(this.shader.getUniformLocationForName('u_resolution'), this.sprite.getContentSize().width, this.sprite.getContentSize().height);
 
             if(cc.sys.isNative){
                 var glProgram_state = cc.GLProgramState.getOrCreateWithGLProgram(this.shader);
