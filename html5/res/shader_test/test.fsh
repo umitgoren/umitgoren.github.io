@@ -1,6 +1,6 @@
 varying vec2 v_texCoord;
 
-
+varying vec4 v_color;
 
 
 void main()
@@ -15,7 +15,7 @@ void main()
     
     texCoord.x += 0.1*sin(10.0*texCoord.y + time);
     
-    gl_FragColor = cc_FragColor*texture2D(cc_MainTexture, texCoord);
+    gl_FragColor = v_color*color;
 
     
 }
