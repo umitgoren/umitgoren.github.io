@@ -11,7 +11,7 @@ void main()
     
     float time = CC_Time[0];
    
-    gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);// vec4(color * tint);
+    //gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);// vec4(color * tint);
     
     texCoord.x += 0.1*sin(10.0*texCoord.y + time);
     
