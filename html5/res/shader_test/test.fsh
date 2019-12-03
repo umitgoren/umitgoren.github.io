@@ -15,7 +15,7 @@ void main()
     
     texCoord.x += 0.1*sin(10.0*texCoord.y + time);
     
-    gl_FragColor = v_color*texture2D(CC_Texture0, v_texCoord);
+    gl_FragColor = v_color*texture2D(CC_Texture0, texCoord);
 
     
 }
