@@ -9,7 +9,7 @@ void main()
     
     vec2 texCoord =  v_texCoord;
     
-    float time = cc_Time[0];
+    float time = CC_Time[0];
    
     gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);// vec4(color * tint);
     
