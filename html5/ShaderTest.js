@@ -53,6 +53,8 @@ var ShaderTest = cc.Node.extend({
 
         this.dt += delta;
         if(this.dt>3.14){this.dt-= 3.14;}
+        
+        console.log(dt);
 
         if( 'opengl' in cc.sys.capabilities ) {
             if(cc.sys.isNative){
