@@ -23,8 +23,8 @@ var ShaderTest = cc.Node.extend({
             this.shader.link();
             this.shader.updateUniforms();
             this.shader.use();
-            this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('u_threshold'), 1.75);
-            this.shader.setUniformLocationWith3f(this.shader.getUniformLocationForName('u_outlineColor'), 0 / 255, 0 / 255, 255 / 255);
+            this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('time'), 0);
+            
            
             
             
@@ -32,8 +32,8 @@ var ShaderTest = cc.Node.extend({
         
             if(cc.sys.isNative){
                 var glProgram_state = cc.GLProgramState.getOrCreateWithGLProgram(this.shader);
-                glProgram_state.setUniformFloat("u_threshold", 1.75);
-                glProgram_state.setUniformVec3("u_outlineColor", {x: 0/255, y: 0/255, z: 255/255});
+                glProgram_state.setUniformFloat("time", 0);
+
                 this.sprite.setGLProgramState(glProgram_state);
             }else{
                 this.sprite.shaderProgram = this.shader;
@@ -58,10 +58,10 @@ var ShaderTest = cc.Node.extend({
 
         if( 'opengl' in cc.sys.capabilities ) {
             if(cc.sys.isNative){
-                this.sprite.getGLProgramState().setUniformFloat("u_radius", 0.003 * Math.abs(Math.sin(2 * this.dt)));
+                this.sprite.getGLProgramState().setUniformFloat("time", this.dt);
             }else{
                 this.shader.use();
-                this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('u_radius'), 0.003 * Math.abs(Math.sin(2 * this.dt)));
+                this.shader.setUniformLocationWith1f(this.shader.getUniformLocationForName('time'), this.dt);
                 this.shader.updateUniforms();
             }
         }
