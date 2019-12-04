@@ -52,7 +52,7 @@ var ShaderTest = cc.Node.extend({
     update : function (delta) {
 
         this.dt += delta;
-        if(this.dt>3.14){this.dt-= 3.14;}
+    
         
 
 
