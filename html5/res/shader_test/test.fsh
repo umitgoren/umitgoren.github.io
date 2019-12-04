@@ -13,7 +13,9 @@ void main()
     
     texCoord.x += 0.1 * sin(10.0 * texCoord.y + time);
     
-    gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);// texture2D(CC_Texture0, texCoord);
+    //gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);// texture2D(CC_Texture0, texCoord);
+    
+    gl_FragColor = vec4(abs(sin(time)),0.0,0.0,1.0);
 
     
 }
