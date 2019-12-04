@@ -41,7 +41,7 @@ var ShaderTest = cc.Node.extend({
 
             this.addChild(this.sprite);
 
-            //this.scheduleUpdate();
+            this.scheduleUpdate();
         }
 
 
