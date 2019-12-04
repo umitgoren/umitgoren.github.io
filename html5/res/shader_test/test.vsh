@@ -8,7 +8,7 @@ varying vec4 v_color;
 
 void main()
 {
-    gl_Position = a_position;// CC_PMatrix * a_position;
+    gl_Position = CC_PMatrix * a_position;
     v_texCoord = a_texCoord;
     v_color = a_color;
 
