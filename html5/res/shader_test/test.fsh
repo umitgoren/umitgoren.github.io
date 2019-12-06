@@ -9,13 +9,11 @@ void main()
 {
     
     
-    vec2 texCoord =  v_texCoord;
+    vec4 pixel = texture2D(CC_Texture0, v_texCoord);
+    float gray = (pixel.r + pixel.g + pixel.b) / 3;
     
-    //float time = CC_Time[0];
     
-    texCoord.x += 0.1 * sin(10.0 * texCoord.y + time);
-    
-    gl_FragColor = texture2D(CC_Texture0, texCoord);
+    gl_FragColor.rgb = vec3(gray);
     
     //gl_FragColor = vec4(abs(sin(time)),0.0,0.0,1.0);
 
