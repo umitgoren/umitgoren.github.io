@@ -1,3 +1,5 @@
+#extension GL_OES_standard_derivatives : enable
+
 uniform float time;
 
 varying vec2 v_texCoord;
