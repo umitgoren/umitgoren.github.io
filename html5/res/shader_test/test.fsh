@@ -14,7 +14,7 @@ void main()
     vec4 pixel = texture2D(CC_Texture0, v_texCoord);
     float gray = (pixel.r + pixel.g + pixel.b) / 3.0;
     
-    
+    fwidth(5.0);
     gl_FragColor.rgb = vec3(gray);
     
     //gl_FragColor = vec4(abs(sin(time)),0.0,0.0,1.0);
