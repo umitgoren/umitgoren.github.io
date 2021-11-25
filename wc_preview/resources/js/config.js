@@ -42,7 +42,7 @@ if(typeof wordPressParams == "undefined"){
 } 
 
 let AVAILABLE_LANGUAGES = [
-    {label: "English",   code: "en", hasDictionary: true,  levelCount: 10034}
+    {label: "English",   code: "en", hasDictionary: true,  levelCount: 1000}
 ];
 
 let WHEEL_SLICES = [
